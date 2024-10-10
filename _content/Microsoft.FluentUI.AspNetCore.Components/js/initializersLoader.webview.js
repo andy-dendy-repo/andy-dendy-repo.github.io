@@ -13,7 +13,7 @@
     window.fetch = async (...args) => {
         let [resource, config] = args;
 
-        if (resource === '_framework/blazor.modules.json') {
+        if (resource === 'framework/blazor.modules.json') {
             resource = modulesResource;
             window.fetch = originalFetch;
         }
